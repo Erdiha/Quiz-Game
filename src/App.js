@@ -25,7 +25,6 @@ function App() {
           throw new Error(`Something went wrong  ${response.status}`)
         }
         const json = await response.json();
-       // console.log(json)
         details && setTriviaData(json)
       }catch (err){}
     }

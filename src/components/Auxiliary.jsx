@@ -1,9 +1,4 @@
 import React, { useReducer, useState } from "react";
-import correctSound from '../assets/correct.mp3';
-import applause from '../assets/heavy-applause.mp3';
-import wrongSound from '../assets/wrong.mp3';
-
-
 //whenthere is one or two players, start button will appear
 export function NumberUser(num,setPlayer1,setPlayer2,player1,player2) { 
   const p1 = 
@@ -170,7 +165,7 @@ export const result = (numPlayers, gameIsOver, scorePlayer1, scorePlayer2,
             winSound.play()
           } 
           
-          return <p className='game-res'>{`${player1.name} is winner`}</p>
+          return <p className='game-res'>{`${player1.name} the is winner`}</p>
         }
         else if (scorePlayer1.current.correct < scorePlayer2.current.correct) {
           if (p1 && p2) {
@@ -179,7 +174,7 @@ export const result = (numPlayers, gameIsOver, scorePlayer1, scorePlayer2,
             winSound.play()
           }
         
-          return <p className='game-res'>{`${player2.name} is winner`}</p>
+          return <p className='game-res'>{`${player2.name} the is winner`}</p>
         }
         else {
           if (p1 && p2) {
