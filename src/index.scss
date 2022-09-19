@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: grid;
+    overflow: hidden;
+     transition: all 0.4s ease;
+     background-color: #dde1e7;
+  }
+  .header-wrapper{
+    display: flex;
+    width: 100%;
+    min-height: 6vh;
+    max-height: 8vh;
+    
+    justify-content: center;
+    align-items: center;
+    font-size:xx-large;
+  }
+  .game-icon{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 8%;
+    width: 100px;
+    height: 100px;
+    background-image: url(./assets/answer.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
