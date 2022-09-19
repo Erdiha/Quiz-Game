@@ -8,13 +8,15 @@ export function NumberUser(num,setPlayer1,setPlayer2,player1,player2) {
       onChange={(e) => setPlayer1({ ...player1, [e.target.name]: e.target.value })}
       placeholder='Enter player one'
       required
+      autocomplete="off"
     />
   const p2= <input
             type="text"
            name='name'
           onChange={(e)=> setPlayer2( {...player2, [e.target.name]:e.target.value})}
           placeholder='Enter player two' 
-          required 
+        required 
+       autocomplete="off"
           />
    return <>
      {p1}
@@ -22,7 +24,9 @@ export function NumberUser(num,setPlayer1,setPlayer2,player1,player2) {
       </>;
 }
 //sets all thr states to default value
-export function StartOver(setShowGame, setDisplayQuestion, setRestartGame,setDetails,setNumPlayers) {
+export function StartOver(setShowGame, setDisplayQuestion, setRestartGame, setDetails, setNumPlayers) {
+    const resetInput = document.querySelectorAll("input");
+
     setShowGame(() => false);
     setDisplayQuestion(() => false);
     setRestartGame(() => false);

@@ -32,9 +32,7 @@ const Home = (
     setRestartGame(() => true)
   }
   return (
-    
     <div className='home-wrapper'>
-      
       {!showGame &&
         <div className='name-container'>
         {instructions()}
@@ -57,7 +55,6 @@ const Home = (
         </div>
       }
       {!displayQuestion && showGame &&
-       
         <div className="game-container">
           <div className="display">
             <GameOptions
@@ -67,7 +64,6 @@ const Home = (
             />
           </div>
         </div>}
-     
       { showGame && displayQuestion && data && <User
             userInfo={userInfo}
             numPlayers={numPlayers}
@@ -81,7 +77,6 @@ const Home = (
             player1Turn={player1Turn}
             player2Turn={player2Turn}
             setDetails={setDetails}
-      
       />}
     </div>)
 }

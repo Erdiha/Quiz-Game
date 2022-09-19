@@ -27,7 +27,8 @@ function GameOptions({ setDetails, setDisplayQuestion, details }) {
   
   const getButtonArr = () => {
     for (let i = 0; i < 9; i++) {
-      const temp = <button name="category" className='cat-btn' key={i} onClick={handleClick} value={catNames[i]}>{catNames[i]}</button>
+      const temp = <button name="category" className='cat-btn' key={i}
+        onClick={handleClick} value={catNames[i]}>{catNames[i]}</button>
           buttonArr.push(temp);
     }
     return buttonArr
@@ -54,7 +55,7 @@ function GameOptions({ setDetails, setDisplayQuestion, details }) {
                 <button  name="difficulty" value="hard" onClick={handleClick} className="difficulty-level hard">hard</button>
                 <br />
                 <b htmlFor="">Enter number of the rounds (0-10)</b> 
-                <input  name="rounds" onChange={handleClick}   type="text"  />
+                <input autocomplete="off"  name="rounds" onChange={handleClick}   type="text"  />
             </div>
             <br />
          {validate()}
