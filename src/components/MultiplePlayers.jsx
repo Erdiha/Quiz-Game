@@ -12,7 +12,7 @@ function Multiplayers({numPlayers, setShowGame, player1,player2,setPlayer1,setPl
   return <>
       {NumberUser(numPlayers,setPlayer1,setPlayer2,player1,player2)}
       {(numPlayers===1 && player1.name !== "" || numPlayers===2 && player2.name !== "" )
-      && <button onClick={handleClick}>Start</button>}
+      && <button className="names-btn" onClick={handleClick}>Start</button>}
   </>
 }
   export default Multiplayers

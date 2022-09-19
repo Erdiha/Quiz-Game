@@ -19,14 +19,15 @@
         gap: 4em;
         p{
             width: 80%;
-            height: fit-content;
             word-wrap: break-word;
             text-align: center;
-            font-size: 1.5rem;
+           font-size: 1.6rem;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            line-height: 2.3rem;
+            line-height: 1.8rem;
             letter-spacing: 0.2rem;
             color: rgb(0, 0, 0);
+            max-height: 30%;
+            
         }
         .name-container-btn{
             display: flex;
@@ -69,7 +70,6 @@
         min-width: 100px;
         align-items: center;
         justify-content: center;
-      
         font-size: large;
     }
 }
@@ -337,7 +337,7 @@
 }
 .game-res{
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: 700!important;
     animation: anim 1.5s ease infinite;
 }
 
@@ -382,4 +382,85 @@ button:hover{
 button{
       border: none;
       transition: all 0.4s ease;
+}
+@media screen and (max-width: 768px){
+    .App > * {
+    font-size: 1em!important;
+    }
+  .game-icon{
+   height:50px!important;
+    width: 50px!important;
+  }
+
+   .name-container {
+    margin-top: 20%!important;
+   p{
+     font-size: 15px!important;
+     line-height: 1.5rem!important;
+    }
+   
+    
+  }
+  .names-btn{
+        height:100px!important ;
+        width: 100px!important;
+   
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+    
+    }
+      input{
+         min-height:34px !important;
+        min-width: 150px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .question{
+        height: 60%!important;
+        width: 80%;
+        margin-top: 20%;
+        h1{
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: 1.1rem!important;
+        }
+    }
+    .choice-wrapper{
+       grid-template-areas: repeat(2,40%) !important;
+        margin-top: -15%;
+        button{
+           font-size: 0.8rem!important;
+           margin: 10px;
+            height: 80%!important;
+     }
+    }
+    .players{
+        width: 45%!important;
+        height: 70%;
+    }
+    .question-wrapper{
+        height: 100%;
+        margin-top: 10%;
+        
+    }
+    .display{
+        margin-top: 10%!important;
+    }
+    .next-question-btn{
+       top: 2%!important;
+       right: 3%!important;
+    }
+    #timer{
+          top: 2%!important;
+       left: 3%!important;
+    }
+    .game-res{
+        margin-top: 30%;
+        font-size: 1.6rem;
+    }
+    .category-wrapper{
+        width: 97%!important;
+    }
 }

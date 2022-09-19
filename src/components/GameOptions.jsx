@@ -49,7 +49,7 @@ function GameOptions({ setDetails, setDisplayQuestion, details }) {
         </div>
               </div>
               <div className="game-options-wrapper">
-                <b htmlFor="">Difficulty</b>
+                <b>Difficulty</b>
                 <button name="difficulty" value="easy" onClick={handleClick} className="difficulty-level easy">easy</button>
                 <button  name="difficulty" value="medium" onClick={handleClick} className="difficulty-level medium">medium</button>
                 <button  name="difficulty" value="hard" onClick={handleClick} className="difficulty-level hard">hard</button>

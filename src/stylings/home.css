@@ -19,16 +19,14 @@
 }
 .home-wrapper .name-container p {
   width: 80%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   word-wrap: break-word;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  line-height: 2.3rem;
+  line-height: 1.8rem;
   letter-spacing: 0.2rem;
   color: rgb(0, 0, 0);
+  max-height: 30%;
 }
 .home-wrapper .name-container .name-container-btn {
   display: flex;
@@ -91,6 +89,7 @@
   font-weight: 600;
   letter-spacing: 2.5px;
   color: white;
+  padding: 5px;
 }
 .game-container .choice-wrapper .choice:focus {
   background-color: hsl(0deg, 42%, 80%);
@@ -307,7 +306,7 @@
 
 .game-res {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   -webkit-animation: anim 1.5s ease infinite;
           animation: anim 1.5s ease infinite;
 }
@@ -370,4 +369,80 @@ button:hover {
 button {
   border: none;
   transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .App > * {
+    font-size: 1em !important;
+  }
+  .game-icon {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .name-container {
+    margin-top: 20% !important;
+  }
+  .name-container p {
+    font-size: 15px !important;
+    line-height: 1.5rem !important;
+  }
+  .names-btn {
+    height: 100px !important;
+    width: 100px !important;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+  }
+  input {
+    min-height: 34px !important;
+    min-width: 150px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .question {
+    height: 60% !important;
+    width: 80%;
+    margin-top: 20%;
+  }
+  .question h1 {
+    font-size: 1.1rem;
+  }
+  .question p {
+    font-size: 1.1rem !important;
+  }
+  .choice-wrapper {
+    grid-template-areas: repeat(2, 40%) !important;
+    margin-top: -15%;
+  }
+  .choice-wrapper button {
+    font-size: 0.8rem !important;
+    margin: 10px;
+    height: 80% !important;
+  }
+  .players {
+    width: 45% !important;
+    height: 70%;
+  }
+  .question-wrapper {
+    height: 100%;
+    margin-top: 10%;
+  }
+  .display {
+    margin-top: 10% !important;
+  }
+  .next-question-btn {
+    top: 2% !important;
+    right: 3% !important;
+  }
+  #timer {
+    top: 2% !important;
+    left: 3% !important;
+  }
+  .game-res {
+    margin-top: 30%;
+    font-size: 1.6rem;
+  }
+  .category-wrapper {
+    width: 97% !important;
+  }
 }/*# sourceMappingURL=home.css.map */
