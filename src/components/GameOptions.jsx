@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 function GameOptions({ setDetails, setDisplayQuestion, details }) {
   const buttonArr = [];
- const [dis,setDis]=useState(false)
+  const [dis,setDis]=useState(false)
   const catNames =[ "Arts & Literature","Film & Music","Food & Drink","Geography","History","Music","Science","Society & Culture","Sport & Leisure" ]
   const getBtns = document.querySelectorAll(".cat-btn");
   const getDifficulty = document.querySelectorAll(".difficulty-level");
