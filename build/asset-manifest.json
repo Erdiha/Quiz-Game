@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc07067d.css",
+    "main.js": "/static/js/main.e5cb966a.js",
+    "static/media/heavy-applause.mp3": "/static/media/heavy-applause.9b3a4843726503c38589.mp3",
+    "static/media/correct.mp3": "/static/media/correct.93c0432c8f2c288fce51.mp3",
+    "static/media/wrong.mp3": "/static/media/wrong.e467c76f3e9966dfcb42.mp3",
+    "static/media/answer.png": "/static/media/answer.96009d25bbfdb5c682d1.png",
+    "index.html": "/index.html",
+    "main.bc07067d.css.map": "/static/css/main.bc07067d.css.map",
+    "main.e5cb966a.js.map": "/static/js/main.e5cb966a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc07067d.css",
+    "static/js/main.e5cb966a.js"
+  ]
+}
