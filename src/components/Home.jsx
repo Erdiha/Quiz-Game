@@ -4,15 +4,10 @@ import GameOptions from "./GameOptions";
 import Multiplayers from "./MultiplePlayers";
 import User from "./User";
 const Home = (
-  {
-    restartGame,
-    setRestartGame,
-    setUserInfo,
-    userInfo,
-    data,
-    setDetails,
-    details,
-    displayQuestion,
+  {restartGame,setRestartGame,
+    setUserInfo,userInfo,
+    data,setDetails,
+    details,displayQuestion,
     setDisplayQuestion }) => {
   const [showGame, setShowGame] = useState(false);
   const [numPlayers, setNumPlayers] = useState(0);

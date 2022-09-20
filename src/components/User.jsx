@@ -46,7 +46,6 @@ const User = ({
     winSound.pause();
     correct.pause();
     wrongSound.pause();
-
   };
   const handleChoice = (randomChoice) => {
     const arr = []
